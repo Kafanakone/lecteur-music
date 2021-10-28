@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecteur musi</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <audio id="music">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="play">lire la musique</button>
+
+    <script>
+        var btn = document.getElementById("play");
+        var music = document.getElementById("music");
+        btn.addEventListener('click', function() {
+            music.play();
+        })
+    </script>
+</body>
+</html>
