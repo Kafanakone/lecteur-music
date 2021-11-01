@@ -10078,10 +10078,7 @@ body{
 .bar:active, .bar:focus{
   background-color: #fff !important;
 }
-.img-cover img{
-  width: 300px;
-  height: 300px;
-}
+
 .rotation{
   animation: tourner 5s linear infinite 
 }
