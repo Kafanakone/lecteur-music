@@ -4,21 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lecteur musi</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/af21d5a2ec.js" crossorigin="anonymous"></script> -->
+    <title>lecteur de musique</title>
 </head>
 <body>
-    <audio id="music">
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
-    <button id="play">lire la musique</button>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-4 mx-auto">
+                <div class="img-cover">
+                    <!-- <img src="img/dark-bg.png" alt="celine dion" class="img-fluid  rounded-circle m-auto" id="cover"> -->
+                    <img src="img/celine-dion-parler-a-mon-pere.jpg" id="couverture" alt="celine dion" class="img-fluid rounded-circle m-auto">
+                </div>
+                <div class="d-flex align-content-between justify-content-between p-3">
+                    <i class="bi bi-skip-backward-fill" id="prev-music"></i>
+                    <i class="bi bi-play-fill align-baseline" id="play-music"></i>
+                    <i class="bi bi-skip-forward-fill align-baseline" id="next-music"></i>
+                    <i class="bi bi-stop-fill align-baseline" id="stop-music"></i>
+                    <div class="signal-bar d-flex"> <!-- Barres de signale-->
+                        <div class="bar s1" id="vol1"></div>
+                        <div class="bar s2 " id="vol2"></div>
+                        <div class="bar s3" id="vol3"></div> 
+                        <div class="bar s4" id="vol4"></div>
+                    </div>
+                </div>
+                <div id="music"><audio src="music/celine-dion-parler-a-mon-pere.mp3" id="audio"></audio></div>
+                <div class="progress-music-container" id="progress-music-container"><p class="progress-music-bar" id="progress-music-bar"></p></div>
+                <!-- <div class="d-flex justify-content-around">
+                    <i class="bi fa-volume-down" id="voldown"></i>
+                    <div class="progress-vol-container"><i class="progress-vol-bar" id="progress-vol-bar"></i></div>
+                    <i class="bi fa-volume-up" id="volup"></i>
+                </div> -->
+            </div>
+            <div class="col-md-6 d-none d-md-block text-white list-play mx-auto text-center p-3">
+                <h3>PLAYLIST</h3>
+                <p class="d-flex justify-content-between celine-dion-parler-a-mon-pere">
+                    <i>Céline Dion - Parler à  mon pere</i>
+                    <i class="bi bi-play-fill play-new-music" title="celinedion-parler-a-mon-pere" onclick="Newmusic(this.title)"></i>
+                    <a href="music/celine-dion-parler-a-mon-pere.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
+                    <i class="bi bi-x-circle-fill" title="celine-dion-parler-a-mon-pere" onclick="supMusic(this.title)"></i>              
+                 </p>
 
-    <script>
-        var btn = document.getElementById("play");
-        var music = document.getElementById("music");
-        btn.addEventListener('click', function() {
-            music.play();
-        })
-    </script>
+                <p class="d-flex justify-content-between ed-sheeran-perfect">
+                    <i class="mr-5">Ed Sheeran - Perfect</i>
+                    <i class="bi bi-play-fill play-new-music" title="ed-sheeran-perfect" onclick="Newmusic(this.title)"></i>
+                    <a href="music/ed-sheeran-perfect.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
+                    <i class="bi bi-x-circle-fill" title="ed-sheeran-perfect" onclick="supMusic(this.title)"></i>              
+                 </p>
+
+                <p class="d-flex justify-content-between Bella_Ciao">
+                    <i class="mr-5">Bella Ciao</i>
+                    <i class="bi bi-play-fill play-new-music" title="Bella_Ciao" onclick="Newmusic(this.title)"></i>
+                    <a href="music/Bella_Ciao.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
+                    <i class="bi bi-x-circle-fill" title="Bella_Ciao" onclick="supMusic(this.title)"></i>              
+                 </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
