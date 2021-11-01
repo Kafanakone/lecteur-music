@@ -17,7 +17,8 @@ var Progressbar = document.getElementById("progress-music-bar");
 // var playNewMusic = document.getElementById("play-new-music");
 
 // Variables
-var playlist = ['ed-sheeran-perfect', 'celine-dion-parler-a-mon-pere', 'Bella_Ciao']; // les artistes
+var playlist = ['ed-sheeran-perfect', 'celine-dion-parler-a-mon-pere', 'Celine_Dion_Je_ne_vous_oublie_pas',
+                    'Céline_Dion_Pour que tu m aimes  encore', 'celine_Dion_Sil_suffisait_daimer', 'Bella_Ciao']; // les artistes
 var idArstiste = 0; // identifiant de l'artiste
 var artiste = playlist[idArstiste]; // l'artiste
 var MusicArreter = false;
@@ -29,7 +30,6 @@ console.log(cover.src); // à effacer juste un test pour voir si la musique chan
 // LecturePause();
 
 // Listes des evernements
-// chanson.addEventListener('error', ErreurLecture())
 playMusic.addEventListener('click', LecturePause); // Jouer la musique avec le btn play
 chanson.addEventListener('ended', function(){ // Lire la musique suivante si celle en cours terminée 
     MusicNext();
@@ -73,9 +73,6 @@ vol4.addEventListener('click', function(){ // Volume à 4
     vol4.style.backgroundColor = '#fff';
 });
 
-// playNewMusic.addEventListener('click', Newmusic)// Jouer nouvelle music venant de la playlist
-
-
 // Listes des fonctions
 
 // Fonction pour chargementes des données de la chansons et l'img de l'artiste (ChargementDonnées)
@@ -107,6 +104,7 @@ function Lecture(artiste){
     playMusic.classList.remove('bi-play-fill');
     playMusic.classList.add('bi-pause-fill');
     
+    // function pour changer le bg de la musique en cours
     function changebgplaylist(Musiqueisplaying){
         var MusicFini = document.querySelectorAll('.m-encours'); // rechercher toutes les classes  m-encours
         var MusicEnCours = document.getElementsByClassName(`${Musiqueisplaying}`); //il me renvoi un tableau
@@ -209,11 +207,3 @@ function supMusic(x){
     
 
 }
-
-// Fonctions les reglages du volumes
-
-
- // fonction si il y'a erreur dans les données de l'artiste
-// function ErreurLecture(){
-//     cover.src = "img/dark-bg.png";
-// }
