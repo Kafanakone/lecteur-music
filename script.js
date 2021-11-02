@@ -251,3 +251,8 @@ function suivant(ClikID) {
 
     }
 }
+
+function Auchargemendelapage() {
+    document.getElementById(DivSlider[1]).style.display = "none";
+    document.getElementById(DivSlider[2]).style.display = "none";
+}

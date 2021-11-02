@@ -10009,6 +10009,9 @@ h3 {
 
 
 /* By Me */
+#art{
+  display: none !important;
+}
 .bi{
   font-size: 1.5em !important;
   margin: 0 !important;
