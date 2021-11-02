@@ -12,9 +12,10 @@
     <div class="container">
         <div class="row my-5">
             <div class="col-12 col-md-4 mx-auto">
-                <div class="img-cover">
-                    <!-- <img src="img/dark-bg.png" alt="celine dion" class="img-fluid  rounded-circle m-auto" id="cover"> -->
+                <div class="d-flex">
+                    <div class="col my-auto"><i class="bi bi-arrow-left-circle-fill" onclick="suivant(1)"></i></div>
                     <img src="" id="couverture" alt="celine dion" class="img-fluid rounded-circle mx-auto mx-md-0 ">
+                    <div class="col my-auto"><i class="bi bi-arrow-right-circle-fill" onclick="suivant(1)"></i></div>
                 </div>
                 <div class="d-flex align-content-between justify-content-between p-3">
                     <i class="bi bi-skip-backward-fill" id="prev-music"></i>
@@ -38,52 +39,57 @@
             </div>
             <div class="col-12 mt-4 mt-md-0 col-md-6 text-white list-play mx-auto text-center p-3">
                 <h3>PLAYLIST</h3>
-                <p class="d-flex justify-content-between ed-sheeran-perfect">
-                    <i class="mr-5">Ed Sheeran - Perfect &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
-                    <i class="bi bi-play-fill play-new-music" title="ed-sheeran-perfect" onclick="Newmusic(this.title)"></i>
-                    <a href="music/ed-sheeran-perfect.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
-                    <i class="bi bi-x-circle-fill" title="ed-sheeran-perfect" onclick="supMusic(this.title)"></i>              
-                 </p>
+                <div id="Ed Sheeran">
+                    <p class="d-flex justify-content-between ed-sheeran-perfect">
+                        <i class="mr-5">Ed Sheeran - Perfect &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                        <i class="bi bi-play-fill play-new-music" title="ed-sheeran-perfect" onclick="Newmusic(this.title)"></i>
+                        <a href="music/ed-sheeran-perfect.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
+                        <i class="bi bi-x-circle-fill" title="ed-sheeran-perfect" onclick="supMusic(this.title)"></i>              
+                     </p>
+                </div>
 
 
-                <p class="d-flex justify-content-between celine-dion-parler-a-mon-pere">
-                    <i class="mr-5">Céline Dion - Parler a mon Père&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
-                    <i class="bi bi-play-fill play-new-music" title="celine-dion-parler-a-mon-pere" onclick="Newmusic(this.title)"></i>
-                    <a href="music/celine-dion-parler-a-mon-pere.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
-                    <i class="bi bi-x-circle-fill" title="celine-dion-parler-a-mon-pere" onclick="supMusic(this.title)"></i>              
-                 </p>
+                <div id="Céline Dion">
+                    <p class="d-flex justify-content-between celine-dion-parler-a-mon-pere">
+                        <i class="mr-5">Céline Dion - Parler a mon Père&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                        <i class="bi bi-play-fill play-new-music" title="celine-dion-parler-a-mon-pere" onclick="Newmusic(this.title)"></i>
+                        <a href="music/celine-dion-parler-a-mon-pere.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
+                        <i class="bi bi-x-circle-fill" title="celine-dion-parler-a-mon-pere" onclick="supMusic(this.title)"></i>              
+                     </p>
+    
+    
+                    <p class="d-flex justify-content-between Celine_Dion_Je_ne_vous_oublie_pas">
+                        <i class="mr-5">Céline Dion - Je ne vous oublie pas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                        <i class="bi bi-play-fill play-new-music" title="Celine_Dion_Je_ne_vous_oublie_pas" onclick="Newmusic(this.title)"></i>
+                        <a href="music/Celine_Dion_Je_ne_vous_oublie_pas.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
+                        <i class="bi bi-x-circle-fill" title="Celine_Dion_Je_ne_vous_oublie_pas" onclick="supMusic(this.title)"></i>              
+                     </p>
+    
+    
+                    <p class="d-flex justify-content-between Céline_Dion_Pour que tu m aimes  encore">
+                        <i class="mr-5">Céline Dion - Pour que tu m'aimes encore</i>
+                        <i class="bi bi-play-fill play-new-music" title="Céline_Dion_Pour que tu m aimes  encore" onclick="Newmusic(this.title)"></i>
+                        <a href="music/Céline_Dion_Pour que tu m aimes  encore.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
+                        <i class="bi bi-x-circle-fill" title="Céline_Dion_Pour que tu m aimes  encore" onclick="supMusic(this.title)"></i>              
+                     </p>
+    
+    
+                    <p class="d-flex justify-content-between celine_Dion_Sil_suffisait_daimer">
+                        <i class="mr-5">Céline Dion - S'il suffisait d'aimer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                        <i class="bi bi-play-fill play-new-music" title="celine_Dion_Sil_suffisait_daimer" onclick="Newmusic(this.title)"></i>
+                        <a href="music/celine_Dion_Sil_suffisait_daimer.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
+                        <i class="bi bi-x-circle-fill" title="celine_Dion_Sil_suffisait_daimer" onclick="supMusic(this.title)"></i>              
+                     </p>
+                </div>
 
-
-                <p class="d-flex justify-content-between Celine_Dion_Je_ne_vous_oublie_pas">
-                    <i class="mr-5">Céline Dion - Je ne vous oublie pas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
-                    <i class="bi bi-play-fill play-new-music" title="Celine_Dion_Je_ne_vous_oublie_pas" onclick="Newmusic(this.title)"></i>
-                    <a href="music/Celine_Dion_Je_ne_vous_oublie_pas.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
-                    <i class="bi bi-x-circle-fill" title="Celine_Dion_Je_ne_vous_oublie_pas" onclick="supMusic(this.title)"></i>              
-                 </p>
-
-
-                <p class="d-flex justify-content-between Céline_Dion_Pour que tu m aimes  encore">
-                    <i class="mr-5">Céline Dion - Pour que tu m'aimes encore</i>
-                    <i class="bi bi-play-fill play-new-music" title="Céline_Dion_Pour que tu m aimes  encore" onclick="Newmusic(this.title)"></i>
-                    <a href="music/Céline_Dion_Pour que tu m aimes  encore.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
-                    <i class="bi bi-x-circle-fill" title="Céline_Dion_Pour que tu m aimes  encore" onclick="supMusic(this.title)"></i>              
-                 </p>
-
-
-                <p class="d-flex justify-content-between celine_Dion_Sil_suffisait_daimer">
-                    <i class="mr-5">Céline Dion - S'il suffisait d'aimer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
-                    <i class="bi bi-play-fill play-new-music" title="celine_Dion_Sil_suffisait_daimer" onclick="Newmusic(this.title)"></i>
-                    <a href="music/celine_Dion_Sil_suffisait_daimer.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
-                    <i class="bi bi-x-circle-fill" title="celine_Dion_Sil_suffisait_daimer" onclick="supMusic(this.title)"></i>              
-                 </p>
-
-
-                 <p class="d-flex justify-content-between Bella_Ciao">
-                    <i class="mr-5">Bella Ciao &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
-                    <i class="bi bi-play-fill play-new-music" title="Bella_Ciao" onclick="Newmusic(this.title)"></i>
-                    <a href="music/Bella_Ciao.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
-                    <i class="bi bi-x-circle-fill" title="Bella_Ciao" onclick="supMusic(this.title)"></i>              
-                 </p>
+                 <div id="Bella Ciao">
+                    <p class="d-flex justify-content-between Bella_Ciao">
+                        <i class="mr-5">Bella Ciao &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                        <i class="bi bi-play-fill play-new-music" title="Bella_Ciao" onclick="Newmusic(this.title)"></i>
+                        <a href="music/Bella_Ciao.mp3" download class=""><i class="bi bi-cloud-arrow-down-fill" title="télécharger"></i></a>              
+                        <i class="bi bi-x-circle-fill" title="Bella_Ciao" onclick="supMusic(this.title)"></i>              
+                     </p>
+                 </div>
             </div>
         </div>
     </div>

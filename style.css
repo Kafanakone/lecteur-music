@@ -10096,9 +10096,6 @@ body{
   background-color: rgb(56, 56, 56);
   color: #fff;
 }
-.bi-pause-fill{
-  color: orange;
-}
 .bi-stop-fill:hover{
   color: #f00 !important;
 }

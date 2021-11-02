@@ -207,3 +207,47 @@ function supMusic(x){
     
 
 }
+
+// Création du slider artiste
+var DivSlider = ["Ed Sheeran", "Céline Dion", "Bella Ciao"];
+var NumId = 0;
+var SousNum;
+var clef = 0;
+function suivant(ClikID) {
+    playlist =[]
+    NumId = NumId + ClikID;
+    SousNum = NumId - ClikID;
+    document.getElementById(DivSlider[SousNum]).style.display = "none";
+    if (NumId < 0) {
+        NumId = DivSlider.length -1;
+    }
+    if (NumId > DivSlider.length -1) {
+        NumId = 0;
+    }
+    MusicStop()
+
+    document.getElementById(DivSlider[NumId]).style.display = "unset";
+    console.log(DivSlider[NumId]);
+
+    if (DivSlider[NumId] == "Ed Sheeran") {
+        playlist =['ed-sheeran-perfect'];
+        ChargementDonnées(playlist[0])
+        Lecture(playlist[0]);
+    }
+
+    else if (DivSlider[NumId] == "Céline Dion") {
+        playlist = ['celine-dion-parler-a-mon-pere', 'Celine_Dion_Je_ne_vous_oublie_pas',
+        'Céline_Dion_Pour que tu m aimes  encore', 'celine_Dion_Sil_suffisait_daimer'];
+        ChargementDonnées(playlist[0]);
+        Lecture(playlist[0]);
+
+
+    }
+
+    else if (DivSlider[NumId] == "Bella Ciao") {
+        playlist = ['Bella_Ciao'];
+        ChargementDonnées(playlist[0]);
+        Lecture(playlist[0]);
+
+    }
+}
